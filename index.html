@@ -9,16 +9,23 @@
     <link href="home.css" rel="stylesheet">
 </head>
 <body>
+    <div class="container" style="min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -30px;">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
     <div class="bar">
         <div class="left">
-            <button class="menu">dd</button>
-            <button class="menu">ad</button>
+            <button class="menu" onclick="openNav()">&#9776;</button>
         </div>
 
         <div class="right">
-            <a href=""><div class="img"><img src="immagini\facebook.png" alt="facebook" width="100%"></div></a>
-            <a href=""><div class="img"><img src="immagini\instagram.png" alt="instagram" width="100%"></div></a>
-            <a href=""><div class="img"><img src="immagini\twitter.png" alt="twitter" width="100%"></div></a>
+            <a href="#"><div class="img"><img src="immagini\facebook.png" alt="facebook" width="100%"></div></a>
+            <a href="#"><div class="img"><img src="immagini\instagram.png" alt="instagram" width="100%"></div></a>
+            <a href="#"><div class="img"><img src="immagini\twitter.png" alt="twitter" width="100%"></div></a>
         </div>
     </div>
     <div class="inizio">
@@ -32,15 +39,37 @@
         </div>
     </div>
     
-    <div class="navbar">
-        <a class="item" href="">Benvenuto</a>
-        <a class="item" href="">Prodotti</a>
-        <a class="item" href="">Progetti</a>
-        <a class="item" href="">Contatti</a>
-    </div>
+    <navbar class="navbar">
+        <a class="item" href="">Prodotti
+            <div class="content">
+                <p>Testo di prova</p>
+            </div>
+        </a>
+        <a class="item" href="">Progetti
+            <div class="content">
+                <p>Testo di prova</p>
+            </div>
+        </a>
+        <a class="item" href="">Contatti
+            <div class="content">
+                <p>Testo di prova</p>
+            </div>
+        </a>
+    </navbar>
     <hr style="margin-top: 1%;">
+    <h1>BENVENUTO</h1>
     <p>Benvenuti nel nuovo sito [inserire nome sito]. Da oggi potrete conoscere meglio la nostra organizzazione e quello che facciamo su questo sito completamente ristrutturato per facilitarvi la navigazione e permettervi di trovare le informazioni che desiderate in modo semplice e veloce.</p>
-    <div class="footer"></div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <footer class="footer"></footer>
+
+    <script> //barra laterale
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
 </body>
 </html>
