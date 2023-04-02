@@ -9,7 +9,11 @@
     <link href="home.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container" style="min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -30px;">
+    <header>
+        <div class="title">
+            <div class="logo"><img id="img" src="immagini\saie2.png" alt="saie-logo" width="100%"></div>
+            <h1>SAIE Campane srl</h1>
+        </div>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#">About</a>
@@ -17,29 +21,18 @@
             <a href="#">Clients</a>
             <a href="#">Contact</a>
           </div>
-    <div class="bar">
-        <div class="left">
-            <button class="menu" onclick="openNav()">&#9776;</button>
-        </div>
-
-        <div class="right">
-            <a href="#"><div class="img"><img src="immagini\facebook.png" alt="facebook" width="100%"></div></a>
-            <a href="#"><div class="img"><img src="immagini\instagram.png" alt="instagram" width="100%"></div></a>
-            <a href="#"><div class="img"><img src="immagini\twitter.png" alt="twitter" width="100%"></div></a>
-        </div>
-    </div>
-    <div class="inizio">
-        <div class="leftc">
-
-        </div>
-        <img id="img" src="immagini\saie2.png" alt="siae logo" width="7%" height="7%" style="margin-top: 2%; margin-right: -1%;">
-        <h1 class="titolo">SAIE Campane srl</h1>
-        <div class="rightc">
-
-        </div>
-    </div>
-    
-    <navbar class="navbar">
+        <nav>
+            <div class="left">
+                <button class="menu" onclick="openNav()">&#9776;</button>
+            </div>
+            <div class="right">
+                <a href="https://www.facebook.com/saiecampane.manna" target="_blank"><div class="img"><img src="immagini\facebook.png" alt="facebook" width="100%"></div></a>
+                <a href="https://www.instagram.com/saie_campane/" target="_blank"><div class="img"><img src="immagini\instagram.png" alt="instagram" width="100%"></div></a>
+                <a href="#"><div class="img" target="_blank"><img src="immagini\twitter.png" alt="twitter" width="100%"></div></a>
+            </div>
+        </nav>
+    </header>
+    <navbar>
         <a class="item" href="">Prodotti
             <div class="content">
                 <p>Testo di prova</p>
@@ -57,11 +50,11 @@
         </a>
     </navbar>
     <hr style="margin-top: 1%;">
-    <h1>BENVENUTO</h1>
-    <p>Benvenuti nel nuovo sito [inserire nome sito]. Da oggi potrete conoscere meglio la nostra organizzazione e quello che facciamo su questo sito completamente ristrutturato per facilitarvi la navigazione e permettervi di trovare le informazioni che desiderate in modo semplice e veloce.</p>
-    </div>
-    <footer class="footer"></footer>
-
+    <main>
+        <h2>BENVENUTO</h2>
+        <p>Benvenuti nel nuovo sito [inserire nome sito]. Da oggi potrete conoscere meglio la nostra organizzazione e quello che facciamo su questo sito completamente ristrutturato per facilitarvi la navigazione e permettervi di trovare le informazioni che desiderate in modo semplice e veloce.</p>
+    </main>
+    <footer></footer>
     <script> //barra laterale
         function openNav() {
           document.getElementById("mySidenav").style.width = "250px";
@@ -70,6 +63,6 @@
         function closeNav() {
           document.getElementById("mySidenav").style.width = "0";
         }
-        </script>
+    </script>
 </body>
 </html>
